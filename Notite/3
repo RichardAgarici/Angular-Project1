@@ -1,0 +1,15 @@
+One important note: All the course code will only work if you are NOT using "strict mode" see the "First App" lecture in this module.
+Strict mode forces you to write more verbose code in some places (especially when it comes to class properties).
+ If you enabled it by accident, you can also disable it by setting strict: false in your tsconfig.json file.
+
+npm install bootstrap@3 --save
+asta instaleaza framework-ul de css bootstrap 3. check bootstrap new versions
+
+ <app-root></app-root>
+ este o componenta a angular rulata in background
+ tot ce scriem in componenta asta poate fi folosit ca un tag in html
+
+selector : assignes a string as a value and string hold app-root
+
+
+
