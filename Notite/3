@@ -11,5 +11,40 @@ asta instaleaza framework-ul de css bootstrap 3. check bootstrap new versions
 
 selector : assignes a string as a value and string hold app-root
 
+components:
+se adauga in app.component.html, nu index-ul principal
+mai pe scurt, fiecare componenta e finisata local intr-un app.component si
+stilata cu boostrap css, ulterior adaugata intr-un script ts in app.module.ts
+care este rootat in index.html principal.
+
+a component is basically a typescript class, so we can instanciate it better.
+
+"" sau '' e tot una in typescript (ts)
+
+@Component({}) ce este intre {} este invocarea unei clase de Javascript basically
+selector : "app-server " - trebuie sa fie un string unic, final si mereu de conventie app-nume componenta. acest selector va fi folosit mereu in app.component.html page cand se genereaza un nou script de js
+templateUrl: './(nume componenta).component.html' se creeaza un nou fisier html unde se vor introduce noile valori pentru pagina refreshuita din js
+stryleUrls : ['./(nume componenta).component.css'] - se injecteaza un array ( pot fi mai multe) css-uri, in functie de nevoie, design, etc.
+export class ServerComponent{
+}
+
+angular uses modules to "glue up" components of the app into packages
+
+orice declarator are 4 caracteritici care pot fi arrays:
+declarations[] - se inregristreaza componentele noi. se importa in ts pentru ca se exporta din server.component.ts
+foarte important. aceste declaratii se fac doar din fisier ts in ts, fara a se trece terminatia la adresa ca fiind de tip ts deoarece
+in interiorul codului se fac un proces behind the scenes care nu are nevoie de implementare directa
+
+
+
+imports[]
+providers[]
+boostrap[] - are responsabilitatea de a recunoaste componenta din html
+
+angular nu va scana fisierele in proiectul tau, indentificandu-le adica trebuie facut un pic de boiler plate.
+de aceea trebuie introdus in @NgModule din app.module.ts
+
+
+
 
 

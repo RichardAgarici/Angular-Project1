@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule}from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {ServerComponent} from "./server/server.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,ServerComponent
   ],
   imports: [
     BrowserModule,
@@ -16,6 +17,9 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
+// randurile 7-18 se numesc declaratori
+
 export class AppModule {
-  title="Angular-Project-1"
+
 }
