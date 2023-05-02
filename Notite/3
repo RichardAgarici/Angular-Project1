@@ -35,8 +35,6 @@ declarations[] - se inregristreaza componentele noi. se importa in ts pentru ca 
 foarte important. aceste declaratii se fac doar din fisier ts in ts, fara a se trece terminatia la adresa ca fiind de tip ts deoarece
 in interiorul codului se fac un proces behind the scenes care nu are nevoie de implementare directa
 
-
-
 imports[]
 providers[]
 boostrap[] - are responsabilitatea de a recunoaste componenta din html

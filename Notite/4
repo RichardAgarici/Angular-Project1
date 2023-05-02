@@ -1,0 +1,21 @@
+in app.component.html se introduce selectorul <app-server>
+deoarece de aici se fac tranzitia la index html.
+practic ierarhia va fi : server.component.html -> server.component.ts->app.module.ts->index.html unde va face dispay la amandoua componenta
+
+se pot crea componente si din terminal folosind comanda:
+ng generate component (nume componenta)
+ng g c (nume componenta)
+amandoua variante sunt corecte. aceasta comanda va genera un nou pachet cu html, css, spec.ts si ts. cu toate detaliile
+incluse cum ar fi import, adnotare, selector, template, style si export.
+dupe executarea comenzii, angular va introduce si in fisierule app.module.ts automat acest script.
+inclusiv importul
+
+fisierul spec.ts este pentru a testa codurile de ts.
+
+componentele se pot refolosi de cateori vrem invocand numele selectorului.
+
+every components needs a templateUrl
+
+in loc sa scriem <app-server> de 2 ori in ts mare, se poate scrie in adnotarea componentei la templateUrl acest lucru.
+
+
