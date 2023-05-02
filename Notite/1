@@ -1,0 +1,25 @@
+what is angular ?
+
+angular is a js framework which allows to creat reactive single page aplication
+
+javascript schimba tot timpul acelasi html de x ori
+
+js changes the domain
+
+js schimba html
+
+angular se schimba undeva la 6 luni. are mai multe variante. dar nu e musai un detaliu important
+
+angular foloseste node.js ca sa isi faca background-ul fain
+el folostes npm dependency node package manager
+
+dependinte sunt framework-ul in sine
+
+pentru a instala framework-ul:
+npm install -g @angular/cli@latest
+
+PENTRU A INITIA UN PROIECT
+cd (change directory) + copy de la adress as text al folderului unde vrei angular + npm init @angular (nume proiect)
+
+A command-line interface (CLI) is a text-based user interface (UI) used to run programs, manage computer files and interact with the computer.
+Command-line interfaces are also called command-line user interfaces, console user interfaces and character user interfaces.

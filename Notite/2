@@ -1,0 +1,38 @@
+package.json este responsabil de dependintele injectate in project.
+node_modules = libraria completa a codurilor angular
+
+PENTRU A INITIA COMENZI CARE TIN DE ANGULAR SE FOLOSESTE PREFIXUL "NG ..."
+daca ai probleme cu comenziile =ng --help
+
+
+<h1>
+    Welcome to {{ title }}!
+</h1>
+aici {{title}} ia titlul proiectului
+
+data binding = reprezinta asocierea de data intre componenta si structura html
+
+selector...
+
+spatiile intre {{}} nu au efect. adica pot sau nu sa existe
+
+app.module.ts = este magagerul nostru de piese pentru aplicatii. ca un motherboard al angularului
+
+import{nume modul} from '...' importeaza library
+
+@ngmodule{
+imports: [nume model]
+}
+este efectiv injectarea modului (pom.xml al angular)
+ce este intre acolade, trebuie sa fie si intre paranteze drepte din imports
+
+in exemplul nostru am importat import
+{FormsModule}from '@angular/forms';
+si am INJECTAT
+imports :[FormsModule]
+-- side note. imports e array...
+
+
+
+
+
