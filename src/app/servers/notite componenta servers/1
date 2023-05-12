@@ -1,0 +1,16 @@
+How do you know to which Properties or Events of HTML Elements you may bind? You can basically bind to all Properties and Events - a good idea is to console.log()  the element you're interested in to see which properties and events it offers.
+
+Important: For events, you don't bind to onclick but only to click (=> (click)).
+
+The MDN (Mozilla Developer Network) offers nice lists of all properties and events of the element you're interested in. Googling for YOUR_ELEMENT properties  or YOUR_ELEMENT events  should yield nice results.
+
+<button class="btn btn-primary" [disabled]="!allowingNewServer" (click)="onCreateServer()">Add Server</button>
+<!--daca introducem sintaxa disabled dupa ce am definit butonul, acesta va inchide accesul.-->
+<!--daca punem un cuvand in [] se face binding de data. adica se citeste ca o actiune din ts ulterioara.-->
+<!--(click) este o functie a angular care ajuta la crearea unui eveniment. se folosesc () in loc de [] pentru a-i spune
+angular ca va urma un eveniment nu un binging.-->
+
+(click) = este alta metoda standard de la angular
+
+$event = cuvant rezervat care da acces la event data. este un parametru pentru functii
+

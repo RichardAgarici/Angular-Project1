@@ -1,6 +1,25 @@
+<label>Server Name</label>
+
+<!--<input type="text" class="form-control" (input)="onUpdateServerName($event)">-->
+
+<input type="text" class="form-control"
+
+       [(ngModel)]="serverName">
+
+<!--in primul input, orice scrie se va actualiza automat.
+dar daca scriem ceva in primul input si dupa aia in al 2-lea input, acesta nu se va mai actualiza, deoarece nu este 2 way bounding
+2 way bounding se triggeruieste la [(ngModel)] fiind si numele, o dubla interpretare.-->
+
+
+<p>{{ serverName }}</p>
+<button class="btn btn-primary" [disabled]="!allowingNewServer" (click)="onCreateServer()">Add Server</button>
+
+<!--<p [innerText]="allowingNewServer">-->
+<!--</p>-->
+<p>{{serverCreationStatus}}</p>
 <app-server>
 </app-server>
 <app-warning-alert></app-warning-alert>
 <app-server>
 </app-server>
-<app-success-alert> </app-success-alert>
+<app-success-alert></app-success-alert>
